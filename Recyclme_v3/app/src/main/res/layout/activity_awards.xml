@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AwardsActivity">
+
+    <TextView
+        android:id="@+id/tv_timesrecycled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="@string/timesrecycled"
+        app:layout_constraintBottom_toTopOf="@+id/iv_silverRib"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_static_recycles_text" />
+
+    <TextView
+        android:id="@+id/tv_weightrecycled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="@string/weightrecycled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_static_weight_text" />
+
+    <ImageView
+        android:id="@+id/iv_bronzeMed"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_silverMed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_bronzeRib"
+        app:srcCompat="@drawable/bronze_medal"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_silverMed"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_goldMed"
+        app:layout_constraintStart_toEndOf="@+id/iv_bronzeMed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_silverRib"
+        app:srcCompat="@drawable/silver_medal"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/iv_goldMed"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_silverMed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_goldRib"
+        app:srcCompat="@drawable/gold_medal"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/iv_bronzeRib"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_silverRib"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bronzeMed"
+        app:srcCompat="@drawable/bronze_ribbon"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/iv_silverRib"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_goldRib"
+        app:layout_constraintStart_toEndOf="@+id/iv_bronzeRib"
+        app:layout_constraintTop_toBottomOf="@+id/iv_silverMed"
+        app:srcCompat="@drawable/silver_ribbon" />
+
+    <ImageView
+        android:id="@+id/iv_goldRib"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_silverRib"
+        app:layout_constraintTop_toBottomOf="@+id/iv_goldMed"
+        app:srcCompat="@drawable/gold_ribbon"
+        android:visibility="invisible"/>
+
+
+    <ImageView
+        android:id="@+id/iv_bronzeMed_greyscale"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_bronzeRib"
+        app:layout_constraintEnd_toStartOf="@+id/iv_silverMed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bronze_medal_greyscale"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/iv_silverMed_greyscale"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_goldMed"
+        app:layout_constraintStart_toEndOf="@+id/iv_bronzeMed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_silverRib"
+        app:srcCompat="@drawable/silver_medal_greyscale" />
+
+    <ImageView
+        android:id="@+id/iv_goldMed_greyscale"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_silverMed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_goldRib"
+        app:srcCompat="@drawable/gold_medal_greyscale" />
+
+    <ImageView
+        android:id="@+id/iv_bronzeRib_greyscale"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_silverRib"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bronzeMed"
+        app:srcCompat="@drawable/bronze_ribbon_greyscale"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/iv_silverRib_greyscale"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_goldRib"
+        app:layout_constraintStart_toEndOf="@+id/iv_bronzeRib"
+        app:layout_constraintTop_toBottomOf="@+id/iv_silverMed"
+        app:srcCompat="@drawable/silver_ribbon_greyscale" />
+
+    <ImageView
+        android:id="@+id/iv_goldRib_greyscale"
+        android:layout_width="75dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_silverRib"
+        app:layout_constraintTop_toBottomOf="@+id/iv_goldMed"
+        app:srcCompat="@drawable/gold_ribbon_greyscale" />
+
+    <TextView
+        android:id="@+id/tv_static_recycles_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="You Have Recycled:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_silverMed" />
+
+    <TextView
+        android:id="@+id/tv_static_brnzMedal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_5_recycles"
+        app:layout_constraintBottom_toTopOf="@+id/iv_bronzeMed"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bronzeMed"
+        app:layout_constraintStart_toStartOf="@+id/iv_bronzeMed" />
+
+    <TextView
+        android:id="@+id/tv_static_slvrMedal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_10_recycles"
+        app:layout_constraintBottom_toTopOf="@+id/iv_silverMed"
+        app:layout_constraintStart_toStartOf="@+id/iv_silverMed" />
+
+    <TextView
+        android:id="@+id/tv_static_gldMedal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_25_recycles"
+        app:layout_constraintBottom_toTopOf="@+id/iv_goldMed"
+        app:layout_constraintEnd_toEndOf="@+id/iv_goldMed"
+        app:layout_constraintStart_toStartOf="@+id/iv_goldMed" />
+
+    <TextView
+        android:id="@+id/tv_static_brnzRib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Pound"
+        app:layout_constraintBottom_toTopOf="@+id/iv_bronzeRib"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bronzeRib"
+        app:layout_constraintStart_toStartOf="@+id/iv_bronzeRib" />
+
+    <TextView
+        android:id="@+id/tv_static_slvrRib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 Pounds"
+        app:layout_constraintBottom_toTopOf="@+id/iv_silverRib"
+        app:layout_constraintEnd_toEndOf="@+id/iv_silverRib"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/iv_silverRib" />
+
+    <TextView
+        android:id="@+id/tv_static_gldRib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 Pounds"
+        app:layout_constraintBottom_toTopOf="@+id/iv_goldRib"
+        app:layout_constraintEnd_toEndOf="@+id/iv_goldRib"
+        app:layout_constraintStart_toStartOf="@+id/iv_goldRib" />
+
+    <TextView
+        android:id="@+id/tv_static_weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Total Weight Recycled:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_silverRib" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

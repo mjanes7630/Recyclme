@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Recyclme_v3</string>
+    <string name="scan">Scan</string>
+    <string name="search">Search</string>
+    <string name="timesrecycled">timesrecycled</string>
+    <string name="weightrecycled">weightrecycled</string>
+    <string name="total_recycles">Total Recycles :</string>
+    <string name="_5_recycles">5 Recycles</string>
+    <string name="_10_recycles">10 Recycles</string>
+    <string name="_25_recycles">25 Recycles</string>
+</resources>
